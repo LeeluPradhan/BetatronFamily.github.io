@@ -4,15 +4,35 @@
 
 <head>
   <meta charset="UTF-8">
- 
+
   <title>BETATRON</title>
 
+  <!-- Device Specific Setting -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- favicon -->
+  <link rel="icon" href="assets/images/Betatron-1_1.png">
+
+<!-- custom js -->
+  <script src="js/script.js" charset="utf-8"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- bootstrap css -->
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+  <!-- flaticon css -->
   <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
+
+  <!-- custom css -->
+
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
+
+
   <div id="content-wrapper">
     <header class="header header--bg">
       <div class="container">
@@ -23,11 +43,11 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img style="height:100px;width:100px;" src="assets/images/Betatron-1_1.png" alt=""></a>
+            <!-- <a class="navbar-brand" href="#"><img style="height:50px;width:50px; padding : 0;" src="assets/images/Betatron-1_1.png" alt=""></a> -->
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">ABOUT</a></li>
+              <li><a href="#">ABOUT</a></li>
               <li><a href="#">VIDEOS</a></li>
               <li><a href="#">EVENTS</a></li>
 
@@ -40,12 +60,18 @@
           <div class="row">
             <div class="col-md-6">
               <h1 class="title">GAMERS DON'T DIE THEY RESPAWN</h1>
-                <a class="button" href="#"><div class="button-text">JOIN CLAN</div></a>
-                <a class="button" href="#"><div class="button-text">JOIN DISCORD</div></a>
+              <a class="button" href="#">
+                <div class="button-text">JOIN CLAN</div>
+              </a>
+              <a class="button" href="#">
+                <div class="button-text">JOIN DISCORD</div>
+              </a>
             </div>
             <div class="col-md-6">
               <div class="text-center">
-                <a class="video-title" data-toggle="modal" data-target="#myModal" href="#"><h4>WATCH TRAILER</h4></a>
+                <a class="video-title" data-toggle="modal" data-target="#myModal" href="#">
+                  <h4>WATCH TRAILER</h4>
+                </a>
               </div>
             </div>
           </div>
@@ -73,7 +99,7 @@
               </button>
 
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="" frameborder="0" allowfullscreen="" id="video"  allowscriptaccess="always"></iframe>
+                <iframe class="embed-responsive-item" src="" frameborder="0" allowfullscreen="" id="video" allowscriptaccess="always"></iframe>
               </div>
             </div>
           </div>
@@ -87,201 +113,246 @@
         <div class="container">
           <ul class="nav nav-pills">
             <li class="active">
-            <a href="#1b" data-toggle="tab"><div class="parallelogram">
-                <div class="parallelogram-child">
-                  <div class="text">TRAILERS</div>
+              <a href="#1b" data-toggle="tab">
+                <div class="parallelogram">
+                  <div class="parallelogram-child">
+                    <div class="text">TRAILERS</div>
+                  </div>
                 </div>
-              </div></a>
+              </a>
             </li>
-            <li><a href="#2b" data-toggle="tab"><div class="parallelogram">
-              <div class="parallelogram-child">
-                <div class="text">GAMEPLAY</div>
-              </div>
-            </div></a>
-          </li>
-          <div class="pull-right header-bottom-type">
-            <fieldset>
-            <select id="header-bottom-type-dropdown" data-placeholder="By Date">
-                <option value="ENGLISH">By Date</option>
-                <option value="CHINESS">By Size</option>
-              </select>
-            </fieldset>
+            <li><a href="#2b" data-toggle="tab">
+                <div class="parallelogram">
+                  <div class="parallelogram-child">
+                    <div class="text">GAMEPLAY</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <div class="pull-right header-bottom-type">
+              <fieldset>
+                <select id="header-bottom-type-dropdown" data-placeholder="By Date">
+                  <option value="ENGLISH">By Date</option>
+                  <option value="CHINESS">By Size</option>
+                </select>
+              </fieldset>
 
-          </div>
-        </ul>
+            </div>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="container header-bottom-wrapper">
-      <div class="tab-content clearfix">
-        <div class="tab-pane active" id="1b">
-          <div class="row gutters-100">
-            <div class="col-md-4">
-              <div class="header-bottom-single">
-                <img class="img-responsive" src="assets/images/trailer-pic1.png" alt="">
-                <div class="header-bottom-single-overlay text-center">
-                  <a href="#"><h3>LAUNCH TRAILER <img src="assets/images/trailer-icon.png" alt=""></h3></a>
+      <div class="container header-bottom-wrapper">
+        <div class="tab-content clearfix">
+          <div class="tab-pane active" id="1b">
+            <div class="row gutters-100">
+              <div class="col-md-4">
+                <div class="header-bottom-single">
+                  <img class="img-responsive" src="assets/images/trailer-pic1.png" alt="">
+                  <div class="header-bottom-single-overlay text-center">
+                    <a href="#">
+                      <h3>LAUNCH TRAILER <img src="assets/images/trailer-icon.png" alt=""></h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="header-bottom-single">
+                  <img class="img-responsive" src="assets/images/trailer-pic2.png" alt="">
+                  <div class="header-bottom-single-overlay text-center">
+                    <a href="#">
+                      <h3>WELCOME TO SAN FRANSISCO <img src="assets/images/trailer-icon.png" alt=""></h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="header-bottom-single">
+                  <img class="img-responsive" src="assets/images/trailer-pic3.png" alt="">
+                  <div class="header-bottom-single-overlay text-center">
+                    <a href="#">
+                      <h3>HACK EVERYTHING <img src="assets/images/trailer-icon.png" alt=""></h3>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="header-bottom-single">
-                <img class="img-responsive" src="assets/images/trailer-pic2.png" alt="">
-                <div class="header-bottom-single-overlay text-center">
-                  <a href="#"><h3>WELCOME TO SAN FRANSISCO <img src="assets/images/trailer-icon.png" alt=""></h3></a>
+            <div class="row gutters-100">
+              <div class="col-md-4">
+                <div class="header-bottom-single">
+                  <img class="img-responsive" src="assets/images/trailer-pic4.png" alt="">
+                  <div class="header-bottom-single-overlay text-center">
+                    <a href="#">
+                      <h3>LAUNCH TRAILER <img src="assets/images/trailer-icon.png" alt=""></h3>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="header-bottom-single">
-                <img class="img-responsive" src="assets/images/trailer-pic3.png" alt="">
-                <div class="header-bottom-single-overlay text-center">
-                  <a href="#"><h3>HACK EVERYTHING <img src="assets/images/trailer-icon.png" alt=""></h3></a>
+              <div class="col-md-4">
+                <div class="header-bottom-single">
+                  <img class="img-responsive" src="assets/images/trailer-pic5.png" alt="">
+                  <div class="header-bottom-single-overlay text-center">
+                    <a href="#">
+                      <h3>WELCOME TO SAN FRANSISCO <img src="assets/images/trailer-icon.png" alt=""></h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="header-bottom-single">
+                  <img class="img-responsive" src="assets/images/trailer-pic6.png" alt="">
+                  <div class="header-bottom-single-overlay text-center">
+                    <a href="#">
+                      <h3>HACK EVERYTHING <img src="assets/images/trailer-icon.png" alt=""></h3>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row gutters-100">
-            <div class="col-md-4">
-              <div class="header-bottom-single">
-              <img class="img-responsive" src="assets/images/trailer-pic4.png" alt="">
-                <div class="header-bottom-single-overlay text-center">
-                  <a href="#"><h3>LAUNCH TRAILER <img src="assets/images/trailer-icon.png" alt=""></h3></a>
+          <div class="tab-pane" id="2b">
+            <div class="row gutters-100">
+              <div class="col-md-4">
+                <div class="header-bottom-single">
+                  <img class="img-responsive" src="assets/images/trailer-pic1.png" alt="">
+                  <div class="header-bottom-single-overlay text-center">
+                    <a href="#">
+                      <h3>LAUNCH TRAILER <img src="assets/images/trailer-icon.png" alt=""></h3>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="header-bottom-single">
-                <img class="img-responsive" src="assets/images/trailer-pic5.png" alt="">
-                <div class="header-bottom-single-overlay text-center">
-                  <a href="#"><h3>WELCOME TO SAN FRANSISCO <img src="assets/images/trailer-icon.png" alt=""></h3></a>
+              <div class="col-md-4">
+                <div class="header-bottom-single">
+                  <img class="img-responsive" src="assets/images/trailer-pic2.png" alt="">
+                  <div class="header-bottom-single-overlay text-center">
+                    <a href="#">
+                      <h3>WELCOME TO SAN FRANSISCO <img src="assets/images/trailer-icon.png" alt=""></h3>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="header-bottom-single">
-                <img class="img-responsive" src="assets/images/trailer-pic6.png" alt="">
-                <div class="header-bottom-single-overlay text-center">
-                  <a href="#"><h3>HACK EVERYTHING <img src="assets/images/trailer-icon.png" alt=""></h3></a>
+              <div class="col-md-4">
+                <div class="header-bottom-single">
+                  <img class="img-responsive" src="assets/images/trailer-pic3.png" alt="">
+                  <div class="header-bottom-single-overlay text-center">
+                    <a href="#">
+                      <h3>HACK EVERYTHING <img src="assets/images/trailer-icon.png" alt=""></h3>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="tab-pane" id="2b">
-          <div class="row gutters-100">
-            <div class="col-md-4">
-              <div class="header-bottom-single">
-                <img class="img-responsive" src="assets/images/trailer-pic1.png" alt="">
-                <div class="header-bottom-single-overlay text-center">
-                  <a href="#"><h3>LAUNCH TRAILER <img src="assets/images/trailer-icon.png" alt=""></h3></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="header-bottom-single">
-                <img class="img-responsive" src="assets/images/trailer-pic2.png" alt="">
-                <div class="header-bottom-single-overlay text-center">
-                  <a href="#"><h3>WELCOME TO SAN FRANSISCO <img src="assets/images/trailer-icon.png" alt=""></h3></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="header-bottom-single">
-                <img class="img-responsive" src="assets/images/trailer-pic3.png" alt="">
-                <div class="header-bottom-single-overlay text-center">
-                  <a href="#"><h3>HACK EVERYTHING <img src="assets/images/trailer-icon.png" alt=""></h3></a>
-                </div>
-              </div>
-            </div>
-          </div>
+
+        <div class="text-center">
+          <a class="button button--news" href="#">
+            <div class="button-text">MORE</div>
+          </a>
         </div>
       </div>
-
-      <div class="text-center">
-        <a class="button button--news" href="#"><div class="button-text">MORE</div></a>
-      </div>
-    </div>
     </section>
     <section class="overview overview--bg">
-    <div class="menu">
+      <div class="menu">
+        <div class="container">
+          <ul class="nav nav-pills">
+            <li class="active">
+              <a href="#1a" data-toggle="tab">
+                <div class="parallelogram">
+                  <div class="parallelogram-child">
+                    <div class="text">OVERVIEW</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li><a href="#2a" data-toggle="tab">
+                <div class="parallelogram">
+                  <div class="parallelogram-child">
+                    <div class="text">FEATURES</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="container">
-        <ul class="nav nav-pills">
-          <li class="active">
-            <a  href="#1a" data-toggle="tab"><div class="parallelogram">
-              <div class="parallelogram-child">
-                <div class="text">OVERVIEW</div>
-              </div>
-            </div></a>
-          </li>
-          <li><a href="#2a" data-toggle="tab"><div class="parallelogram">
-            <div class="parallelogram-child">
-              <div class="text">FEATURES</div>
-            </div>
-          </div></a>
-        </li>
-        </ul>
-      </div>
-    </div>
-    <div class="container">
-      <div class="tab-content clearfix">
-        <div class="tab-pane active" id="1a">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-md-4">
-                  <img class="img-responsive overview-image" src="assets/images/overview-image.png" alt="">
-                </div>
-                <div class="col-md-8">
-                  <div class="overview__keyValue">
-                    <dl>
-                      <dt>Website <span class="overview__keyValue-seperator">:</span></dt>
-                      <a href="#"><dd>Official Website</dd></a>
-                      <dt>Platforms(s) <span class="overview__keyValue-seperator">:</span></dt>
-                      <a href="#"><dd>Xbox One, Play Station 4, PC</dd></a>
-                      <dt>Release <span class="overview__keyValue-seperator">:</span></dt>
-                      <a href="#"><dd>Available Now</dd></a>
-                      <dt>Developer(s) <span class="overview__keyValue-seperator">:</span></dt>
-                      <a href="#"><dd>Ubisoft Montreal</dd></a>
-                    </dl>
+        <div class="tab-content clearfix">
+          <div class="tab-pane active" id="1a">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img class="img-responsive overview-image" src="assets/images/overview-image.png" alt="">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="overview__keyValue">
+                      <dl>
+                        <dt>Website <span class="overview__keyValue-seperator">:</span></dt>
+                        <a href="#">
+                          <dd>Official Website</dd>
+                        </a>
+                        <dt>Platforms(s) <span class="overview__keyValue-seperator">:</span></dt>
+                        <a href="#">
+                          <dd>Xbox One, Play Station 4, PC</dd>
+                        </a>
+                        <dt>Release <span class="overview__keyValue-seperator">:</span></dt>
+                        <a href="#">
+                          <dd>Available Now</dd>
+                        </a>
+                        <dt>Developer(s) <span class="overview__keyValue-seperator">:</span></dt>
+                        <a href="#">
+                          <dd>Ubisoft Montreal</dd>
+                        </a>
+                      </dl>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="overview__paragraph">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                <p>xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane" id="2a">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-md-4">
-                  <img class="img-responsive overview-image" src="assets/images/overview-image.png" alt="">
-                </div>
-                <div class="col-md-8">
-                  <div class="overview__keyValue">
-                    <dl>
-                      <dt>Website <span class="overview__keyValue-seperator">:</span></dt>
-                      <a href="#"><dd>Official Website</dd></a>
-                      <dt>Platforms(s) <span class="overview__keyValue-seperator">:</span></dt>
-                      <a href="#"><dd>Xbox One, Play Station 4, PC</dd></a>
-                      <dt>Release <span class="overview__keyValue-seperator">:</span></dt>
-                      <a href="#"><dd>Available Now</dd></a>
-                      <dt>Developer(s) <span class="overview__keyValue-seperator">:</span></dt>
-                      <a href="#"><dd>Ubisoft Montreal</dd></a>
-                    </dl>
-                  </div>
+              <div class="col-lg-6">
+                <div class="overview__paragraph">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                  <p>xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit </p>
                 </div>
               </div>
             </div>
           </div>
+          <div class="tab-pane" id="2a">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img class="img-responsive overview-image" src="assets/images/overview-image.png" alt="">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="overview__keyValue">
+                      <dl>
+                        <dt>Website <span class="overview__keyValue-seperator">:</span></dt>
+                        <a href="#">
+                          <dd>Official Website</dd>
+                        </a>
+                        <dt>Platforms(s) <span class="overview__keyValue-seperator">:</span></dt>
+                        <a href="#">
+                          <dd>Xbox One, Play Station 4, PC</dd>
+                        </a>
+                        <dt>Release <span class="overview__keyValue-seperator">:</span></dt>
+                        <a href="#">
+                          <dd>Available Now</dd>
+                        </a>
+                        <dt>Developer(s) <span class="overview__keyValue-seperator">:</span></dt>
+                        <a href="#">
+                          <dd>Ubisoft Montreal</dd>
+                        </a>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
     </section>
 
     <section class="news news--bg">
@@ -298,7 +369,9 @@
             <div class="news__image">
               <img class="img-responsive" src="assets/images/news1.png" alt="">
               <div class="news__image-overlay">
-                <a href="#"><h2>3DS Monster Hunter Rpg Release Date Announced</h2></a>
+                <a href="#">
+                  <h2>3DS Monster Hunter Rpg Release Date Announced</h2>
+                </a>
               </div>
             </div>
           </div>
@@ -306,7 +379,9 @@
             <div class="news__image">
               <img class="img-responsive" src="assets/images/news2.png" alt="">
               <div class="news__image-overlay">
-                <a href="#"><h2>More Crackdown 3 Footage Coming To Gamescom</h2></a>
+                <a href="#">
+                  <h2>More Crackdown 3 Footage Coming To Gamescom</h2>
+                </a>
               </div>
             </div>
           </div>
@@ -316,7 +391,9 @@
             <div class="news__image">
               <img class="img-responsive" src="assets/images/news3.png" alt="">
               <div class="news__image-overlay">
-                <a href="#"><h2>3DS Monster Hunter Rpg Release Date Announced</h2></a>
+                <a href="#">
+                  <h2>3DS Monster Hunter Rpg Release Date Announced</h2>
+                </a>
               </div>
             </div>
           </div>
@@ -324,7 +401,9 @@
             <div class="news__image">
               <img class="img-responsive" src="assets/images/news4.png" alt="">
               <div class="news__image-overlay">
-                <a href="#"><h2>3DS Monster Hunter Rpg Release Date Announced</h2></a>
+                <a href="#">
+                  <h2>3DS Monster Hunter Rpg Release Date Announced</h2>
+                </a>
               </div>
             </div>
           </div>
@@ -332,7 +411,9 @@
             <div class="news__image">
               <img class="img-responsive" src="assets/images/news5.png" alt="">
               <div class="news__image-overlay">
-                <a href="#"><h2>3DS Monster Hunter Rpg Release Date Announced</h2></a>
+                <a href="#">
+                  <h2>3DS Monster Hunter Rpg Release Date Announced</h2>
+                </a>
               </div>
             </div>
           </div>
@@ -340,13 +421,17 @@
             <div class="news__image">
               <img class="img-responsive" src="assets/images/news6.png" alt="">
               <div class="news__image-overlay">
-                <a href="#"><h2>3DS Monster Hunter Rpg Release Date Announced</h2></a>
+                <a href="#">
+                  <h2>3DS Monster Hunter Rpg Release Date Announced</h2>
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div class="text-center">
-          <a class="button button--news" href="#"><div class="button-text">MORE</div></a>
+          <a class="button button--news" href="#">
+            <div class="button-text">MORE</div>
+          </a>
         </div>
       </div>
     </section>
@@ -372,8 +457,8 @@
           </div>
           <div class="form-group text-center">
             <div class="form__button">
-            <input class="button--form" type="submit" value="SEND">
-          </div>
+              <input class="button--form" type="submit" value="SEND">
+            </div>
           </div>
 
         </form>
@@ -402,14 +487,19 @@
 
 
 
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+
+
+
+
   <script src="assets/jquery/jquery-3.2.1.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
-  <script>
-    $(document).ready(function() {
 
-    });
-  </script>
+
 </body>
 
 
